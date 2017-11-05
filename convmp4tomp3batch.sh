@@ -2,7 +2,7 @@
 # @@@ extract mp4 to mp3 in batch via mpeg
 
 # > note you can get file from shared dropfolder   
-# curl -L https://www.dropbox.com/sh/6qchq16vzkfp98z/AAB6v7o9XwDFFhtaSbN1q7dWa?dl=1 > mp4.zip ; unzip mp4.zip
+# wget https://www.dropbox.com/sh/okopsa88glw6m3b/AAADdE3YALjeFsABt1iOvhRma?dl=1 -O mp4.zip &&  unzip mp4.zip  2> /dev/null
 #extract option
 params1="-q:a 0 -map a"
 params2="-vn -ar 44100 -ac 2 -ab 192k -f mp3"
