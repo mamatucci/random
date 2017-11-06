@@ -23,7 +23,7 @@ cd -
 # monitor in another shell
 clear
 export targetFolder=/tmp/obar1/videos
-echo watch -n3 '"''ls '$targetFolder'/*.mp3 2>/dev/null  |wc -c ; ls '$targetFolder'/*.mp4 | wc -c''"'
+echo watch -n3 '"''ls '$targetFolder'/*.mp3 2>/dev/null  |wc -l ; ls '$targetFolder'/*.mp4 | wc -l''"'
 
 # process videos
 find $targetFolder -name "*.mp4" -print0 |
