@@ -1,2 +1,0 @@
-sudo apt-get install calibre
-ebook-convert file.epub file.pdf
