@@ -1,13 +1,13 @@
 @startwbs
-* Business Process Modelling WBS
-** Launch the project
-*** Complete Stakeholder Research
-*** Initial Implementation Plan
-** Design phase
-*** Model of AsIs Processes Completed
-**** Model of AsIs Processes Completed1
-**** Model of AsIs Processes Completed2
-*** Measure AsIs performance metrics
-*** Identify Quick Wins
-** Complete innovate phase
+* root
+** colab-notebooks
+** convert epub to pdf.md
+** convmp4tomp3batch.sh
+** git.md
+** how to dump safari with wget
+** plantuml.md
+** rally-and-gitlab.md
+** scala-style-guide
+** sparktemplatedataeng
+** windows-development-environment
 @endwbs
