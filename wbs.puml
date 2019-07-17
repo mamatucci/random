@@ -1,10 +1,11 @@
-@startwbs
 left to right direction
+@startwbs
 * root
 ** colab-notebooks
 ** convert epub to pdf.md
 ** convmp4tomp3batch.sh
 ** git.md
+** git as terminal in intellij
 ** how to dump safari with wget
 ** plantuml.md
 ** rally-and-gitlab.md
