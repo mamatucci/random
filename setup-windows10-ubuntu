@@ -2,5 +2,9 @@
 let s leverage the 
 https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
-
+- get pip 
 `$ sudo apt install python-pip`
+
+
+- get pyspark
+`~$ pip install --upgrade pyspark`
