@@ -5,7 +5,7 @@
 sudo apt-get install -y curl
 
 # pip 
-sudo apt install python-pip
+sudo apt install python3-pip
 
 # pyspark
-sudo pip install --upgrade pyspark
+sudo pip3 install --upgrade pyspark
