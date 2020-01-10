@@ -5,22 +5,31 @@
 # set -x
 
 S=$1
-A="${S/'https://github.com/'/''}"
-user="$(cut -d'/' -f1 <<<"$A")" 
-repo="$(cut -d'/' -f2 <<<"$A")" 
-pathrepo="./$user/$repo"
+A="${S/'git@github.com:'/''}"
+userrepo="$(cut -d'/' -f1 <<<"$A")" 
+repo="$(cut -d'/' -f2 <<<"$A")"
+pathrepo="$userrepo/$repo"
 
+ 
+echo $userrepo
+echo $repo
+echo $pathrepo
+ 
 
 if [ -d "$pathrepo" ]; then
-  mkdir -p $pathrepo
+  echo pulling...
   cd $pathrepo
   git fetch && git pull --progress
 else
-  git clone --progress $S $pathrepo
+  echo cloning...
+  mkdir -p $pathrepo
+  cd $pathrepo
+  git clone --progress $S $repo  # nohup   ...  '&>' $repo.out'&' 
 fi
 
-cd $pathrepo
+cd $repo
 git branch -vv
 
 
 echo done with $pathrepo
+
